@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+}
+
+.gameContainer {
+  background-color: white;
+  width: 800px;
+  height: 400px;
+  margin-block: 50px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* player start */
+.player {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+
+.player * {
+  width: 100%;
+  height: 100%;
+}
+
+/* player end */
+
+/* enime start */
+.enime {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: 800px;
+}
+
+.enime * {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(70deg) rotateZ(20deg);
+}
+
+/* enime end */
+
+
+.gameOver {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 0, 0, 0.139);
+  color: darkred;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.gameOver>div {
+  text-align: center;
+}
+
+.gameOver button {
+  border: 3px solid darkgreen;
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* jump button hhh */
+.jump-btn {
+  border: 3px solid blue;
+  color: blue;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.jump-btn:active {
+  border-color: lightgreen;
+  color: lightgreen;
+  box-shadow: 0px 0px 5px 3px lightgreen;
+}
