@@ -86,6 +86,9 @@ body {
   cursor: pointer;
   background-color: transparent;
   font-weight: bold;
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
 }
 
 .jump-btn:active {

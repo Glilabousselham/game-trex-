@@ -118,8 +118,9 @@ export default function GameContainer() {
     <div  className='gameContainer'>
       <Enime x={enimeX}/>
       <Player y={playerY}/>
-      <button onClick={onClick} className='jump-btn'>JUMP</button>
-      {gameState.gameOver&&<GameOver startGame={startGame}/>}
+
+      
+      {gameState.gameOver?<GameOver startGame={startGame}/>:<button onClick={onClick} className='jump-btn'>JUMP</button>}
     </div>
   )
 }
